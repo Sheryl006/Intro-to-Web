@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and FORMS</title>
+</head>
+<body>
+    <form name="frmRegCustomer">
+        <fieldset>
+            <!-- Textfield -->
+            <legend>Create new Account</legend>
+            <label for="">Full Name</label>
+            <input type="text" placeholder="Full name " id="txtFullName ">
+            <br><br>
+            
+            <!-- Radio -->
+            <label for="">Select Your Gender:</label>
+            <input type="radio" id="rdoGender">male 
+            <input type="radio" id="rdoGender">female
+            <br><br>
+
+            <!-- Email -->
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Email" id="txtEmail">
+            <br><br>
+
+            <!-- Dropdown -->
+            <label for="">Select Your Nationality:</label>
+            <select  id="selNationality">
+                <option value="">Kenya</option>
+                <option value="">Tanzania</option>
+                <option value="">Congo</option>
+            </select>
+            <br><br>
+
+            <!-- Long Text -->
+            <label for="">Enter you Address</label>
+            <textarea id="address"></textarea>
+            <br><br>
+
+            <!-- Upload photo -->
+            <label for="">Upload your photo</label>
+            <input type="file" name="" id="uploadPhoto">
+            <br><br>
+
+            <!-- Password -->
+            <label for="">Password</label>
+            <input type="password">
+            <br><br>
+
+            <label for="">Confirm your Password</label>
+            <input type="password">
+            <br><br>
+
+            <!-- Checkbox -->
+             <input type="checkbox" name="" id="">I agree to terms
+             <input type="checkbox" name="" id="">Receive Email Alerts
+             <br><br>
+
+             <!-- Button -->
+              <input type="submit" value="Submit your Data">
+              <input type="reset" value="Clear All">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
