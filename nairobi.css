@@ -1,0 +1,112 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serifs;
+}
+#header {
+    background-color: rgb(71, 2, 2);
+    color: gold;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+#navbar {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-right: 100px;
+}
+
+
+
+#left_side_bar {
+    float: left;
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+}
+
+#main {
+    float: left;
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+}
+
+#main>h2 {
+    background-color:  rgb(80, 0, 0);
+    color: white;
+    border-bottom: 2px solid orange;
+}
+
+#right_side_bar {
+    float: left;
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+}
+
+#right_side_bar>h2 {
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid orange;
+}
+
+#news {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(80, 0, 0);
+    clear: both;
+}
+
+#news>h3 {
+    background-color: rgb(68, 0, 0);
+    color: white;
+    border-bottom: 2px solid orange;
+    text-align: center;
+}
+#footer {
+    width: 100%;
+    background-color: black;
+    color: gold;
+    height: 50px;
+    border-radius: 6px;
+}
+#container {
+    width: 90%;
+    height: auto;
+    margin: 4%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: yellow;
+}
+a:active{
+    color: green;
+}
+
+a:link, a:visited{
+    background-color: bisque;
+    color: black;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+}
+
+a:hover, a:active{
+    background-color: orange;
+    color: black;
+
+}
