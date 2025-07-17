@@ -110,3 +110,39 @@ a:hover, a:active{
     color: black;
 
 }
+/* Styling the list */
+ul{
+    list-style-type: square !important;
+    list-style-position: inside;
+    background-color: maroon;
+}
+ul li{
+    background-color: black;
+    color: bisque;
+    padding: 3px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/* Styling the table */
+table,th,td{
+    border: 1px solid grey;
+   
+}
+ /* If you want one border only */
+ table{
+    border-collapse: collapse;
+ }
+ th{
+    background-color: brown;
+    color: antiquewhite;
+ }
+ td,th{
+    border-bottom: 2px solid grey;
+ }
+ /* Hovering on table */
+ tr:hover{
+    background-color: rgb(44, 13, 13);
+    color: antiquewhite;
+    border-right: 10px solid maroon;
+ }
