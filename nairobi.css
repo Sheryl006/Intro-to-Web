@@ -3,12 +3,13 @@
 }
 #header {
     background-color: rgb(71, 2, 2);
-    color: gold;
+    color: rgb(216, 161, 94);
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: 80px;
     border: 1px solid black;
     border-radius: 20px;
+    padding-top: 10px;
 
 }
 
@@ -21,15 +22,8 @@
     border: 1px solid black;
     border-radius: 6px;
     margin-right: 100px;
-}
-
-
-
-#left_side_bar {
-    float: left;
-    width: 20%;
-    height: auto;
-    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #main {
@@ -37,32 +31,39 @@
     width: 50%;
     height: auto;
     border: 1px solid black;
+    margin-left: 150px;
+    
 }
 
 #main>h2 {
     background-color:  rgb(80, 0, 0);
     color: white;
     border-bottom: 2px solid orange;
+    text-align: center;
 }
 
-#right_side_bar {
+#login {
     float: left;
     width: 20%;
     height: auto;
     border: 1px solid black;
+    display: inline;
+    border-radius: 10px;
+    border: 1px solid maroon;
 }
 
-#right_side_bar>h2 {
+#login>h2 {
     background-color: black;
     color: white;
     border-bottom: 2px solid orange;
+  
 }
 
 #news {
     width: 100%;
     height: auto;
     border: 1px solid rgb(80, 0, 0);
-    clear: both;
+   
 }
 
 #news>h3 {
@@ -71,54 +72,97 @@
     border-bottom: 2px solid orange;
     text-align: center;
 }
+
+/* Styling the footer */
 #footer {
     width: 100%;
     background-color: black;
     color: gold;
     height: 50px;
     border-radius: 6px;
+    clear: both;
 }
+
+/* Styling container */
 #container {
     width: 90%;
     height: auto;
     margin: 4%;
     border: 1px solid lightgrey;
-    border-radius: 10px;
+    border-radius: 5px;
 }
-a:link{
+
+/* Styling the links in header */
+#navbar>ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  
+}
+#navbar>ul li a{
+    float: left;
+}
+#navbar> ul li a{
+    display: inline-block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: black;
+    margin-right: 40px;
+    margin-left: 180px;
+}
+
+#navbar>ul li{
+    border-right: 1px solid red;
+}
+
+#navbar> ul li a:hover{
+    border-bottom: 2px solid gold;
+}
+
+#navbar> ul li:last-child{
+    border-right: none;
+}
+
+
+#navbar>a:link{
     color: white;
     text-decoration: none;
 }
-a:visited{
-    color: yellow;
+#navbar>a:visited{
+    color: maroon;
 }
-a:active{
+#navbar>a:active{
     color: green;
 }
 
-a:link, a:visited{
+#navbar>a:link, a:visited{
     background-color: bisque;
+    border-radius: 10px;
     color: black;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
     display:inline-block;
+    margin-left: 20px;
 }
 
-a:hover, a:active{
+#navbar>a:hover, a:active{
     background-color: orange;
     color: black;
 
 }
+
 /* Styling the list */
-ul{
-    list-style-type: square !important;
+#news>ul{
+    list-style-type: square ;
     list-style-position: inside;
     background-color: maroon;
 }
-ul li{
+#news>ul li{
     background-color: black;
-    color: bisque;
+    color: bisque;                                                              
     padding: 3px;
     margin-left: 30px;
     margin-top: 5px;
@@ -129,7 +173,7 @@ table,th,td{
     border: 1px solid grey;
    
 }
- /* If you want one border only */
+ /* If you want one border only */                                                                          
  table{
     border-collapse: collapse;
  }
@@ -146,8 +190,7 @@ table,th,td{
     color: antiquewhite;
     border-right: 10px solid maroon;
  }
-
-/* Skipping colors */
+ /* Skipping colors */
  tr:nth-child(even){
 background-color: beige;
  }
@@ -183,3 +226,49 @@ input[type=submit]:hover,input[type=reset]:hover{
     background-color: rgb(211, 159, 167);
     border: 2px solid maroon;
 }
+
+
+#left_side_bar {
+    width: 30%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+#left_side_bar>ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: black;
+    position: fixed/*makes navbar fixed on scroll*/;
+    
+
+}
+
+/* Make the entire list clickable */
+#left_side_bar>ul li a{
+    display: block;
+    width: 100px;
+    padding: 6px 8px;
+    color: wheat;
+    text-decoration: none;
+}
+
+#left_side_bar>ul li a:hover{
+background-color: maroon;
+color: white;
+border-right: 10px solid gold;
+}
+
+#left_side_bar>ul li{
+    margin: 0px;
+}
+
+#left_side_bar>ul li{
+    background-color: black;
+    color: white;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid maroon;
+    text-align: center;
+    
+}
+
